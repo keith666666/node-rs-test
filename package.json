@@ -1,0 +1,39 @@
+{
+  "name": "@keith666666/node-rs-test",
+  "version": "0.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "napi": {
+    "name": "node-rs-test",
+    "triples": {
+      "defaults": false,
+      "additional": [
+        "x86_64-apple-darwin"
+      ]
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.17.0",
+    "ava": "^5.1.1"
+  },
+  "ava": {
+    "timeout": "3m",
+    "files": [
+      "__test__/**/*"
+    ]
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "ava",
+    "universal": "napi universal",
+    "version": "napi version"
+  },
+  "repository": "https://github.com/keith666666/node-rs-test"
+}

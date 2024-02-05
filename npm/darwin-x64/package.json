@@ -1,0 +1,19 @@
+{
+  "name": "@keith666666/node-rs-test-darwin-x64",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "node-rs-test.darwin-x64.node",
+  "files": [
+    "node-rs-test.darwin-x64.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": "https://github.com/keith666666/node-rs-test"
+}
